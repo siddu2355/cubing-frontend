@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cubing-frontend/static/css/main.71c8953d.css",
-    "main.js": "/cubing-frontend/static/js/main.0a18aba5.js",
-    "static/js/787.918e9164.chunk.js": "/cubing-frontend/static/js/787.918e9164.chunk.js",
-    "static/media/cube.jpg": "/cubing-frontend/static/media/cube.ac7525e7837a2659aa63.jpg",
-    "static/media/cub-club-logo.png": "/cubing-frontend/static/media/cub-club-logo.5a98c4e4ff2538272572.png",
-    "index.html": "/cubing-frontend/index.html",
-    "main.71c8953d.css.map": "/cubing-frontend/static/css/main.71c8953d.css.map",
-    "main.0a18aba5.js.map": "/cubing-frontend/static/js/main.0a18aba5.js.map",
-    "787.918e9164.chunk.js.map": "/cubing-frontend/static/js/787.918e9164.chunk.js.map"
+    "main.css": "/cubing-frontend/results/single/static/css/main.8eb9f38e.css",
+    "main.js": "/cubing-frontend/results/single/static/js/main.b0af2275.js",
+    "static/js/787.918e9164.chunk.js": "/cubing-frontend/results/single/static/js/787.918e9164.chunk.js",
+    "static/media/cube.jpg": "/cubing-frontend/results/single/static/media/cube.ac7525e7837a2659aa63.jpg",
+    "static/media/cub-club-logo.png": "/cubing-frontend/results/single/static/media/cub-club-logo.5a98c4e4ff2538272572.png",
+    "index.html": "/cubing-frontend/results/single/index.html",
+    "main.8eb9f38e.css.map": "/cubing-frontend/results/single/static/css/main.8eb9f38e.css.map",
+    "main.b0af2275.js.map": "/cubing-frontend/results/single/static/js/main.b0af2275.js.map",
+    "787.918e9164.chunk.js.map": "/cubing-frontend/results/single/static/js/787.918e9164.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71c8953d.css",
-    "static/js/main.0a18aba5.js"
+    "static/css/main.8eb9f38e.css",
+    "static/js/main.b0af2275.js"
   ]
 }
