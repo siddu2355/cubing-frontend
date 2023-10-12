@@ -26,8 +26,8 @@ class Participants extends Component {
         return (
             <div className='App'>
                 <div style={{marginTop:"20px", marginBottom:"20px"}}>
-                  <span className={this.clname("single")}><a aria-disabled="true" href='/results/single'>Single</a></span>
-                  <span className={this.clname("average")}><a href='/results/average'>Average</a></span>
+                  <span className={this.clname("single")}><a aria-disabled="true" href='/#/results/single'>Single</a></span>
+                  <span className={this.clname("average")}><a href='/#/results/average'>Average</a></span>
                 </div>
                 <Table sa={this.props.sa}/>
             </div>

@@ -10,8 +10,8 @@ function App() {
       <NavBar/>
       <Routes>
         <Route exact path="/" element={<Participants sa={1} />} />
-        <Route exact path="/results/single" element={<Participants sa={1} />} />
-        <Route exact path="/results/average" element={<Participants sa={0} />} />
+        <Route exact path="/#/results/single" element={<Participants sa={1} />} />
+        <Route exact path="/#/results/average" element={<Participants sa={0} />} />
       </Routes>
     </>
   );
