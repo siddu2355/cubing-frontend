@@ -44,10 +44,10 @@ class Table extends Component {
                             {sa === 0 &&<> <td className='table-value'>
                                {this.timeConversion(participant.solve1)}
                             </td>
-                            <td className='table-value'>{this.timeConversion(participant.solve2)}{" "}</td>
-                            <td className='table-value'>{this.timeConversion(participant.solve3)}{" "}</td>
-                            <td className='table-value'>{this.timeConversion(participant.solve4)}{" "}</td>
-                            <td className='table-value'>{this.timeConversion(participant.solve5)}{" "}</td>
+                            <td className='table-value'>{this.timeConversion(participant.solve2)}</td>
+                            <td className='table-value'>{this.timeConversion(participant.solve3)}</td>
+                            <td className='table-value'>{this.timeConversion(participant.solve4)}</td>
+                            <td className='table-value'>{this.timeConversion(participant.solve5)}</td>
                             </>}
                         </tr>
                     )}
