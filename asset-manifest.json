@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/cubing-frontend/static/css/main.71c8953d.css",
-    "main.js": "/cubing-frontend/static/js/main.dd096ce7.js",
+    "main.js": "/cubing-frontend/static/js/main.fd317d8e.js",
     "static/js/787.918e9164.chunk.js": "/cubing-frontend/static/js/787.918e9164.chunk.js",
     "static/media/cube.jpg": "/cubing-frontend/static/media/cube.ac7525e7837a2659aa63.jpg",
     "static/media/cub-club-logo.png": "/cubing-frontend/static/media/cub-club-logo.5a98c4e4ff2538272572.png",
     "index.html": "/cubing-frontend/index.html",
     "main.71c8953d.css.map": "/cubing-frontend/static/css/main.71c8953d.css.map",
-    "main.dd096ce7.js.map": "/cubing-frontend/static/js/main.dd096ce7.js.map",
+    "main.fd317d8e.js.map": "/cubing-frontend/static/js/main.fd317d8e.js.map",
     "787.918e9164.chunk.js.map": "/cubing-frontend/static/js/787.918e9164.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71c8953d.css",
-    "static/js/main.dd096ce7.js"
+    "static/js/main.fd317d8e.js"
   ]
 }
