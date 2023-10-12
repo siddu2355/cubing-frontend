@@ -1,4 +1,4 @@
-import {Route, Routes} from 'react-router-dom';
+import {Route, Switch} from "react-router-dom"
 import './App.css';
 
 import NavBar from './components/Navbar';
@@ -8,11 +8,11 @@ function App() {
   return (
     <>
       <NavBar/>
-      <Routes>
-        <Route exact path="/" element={<Participants sa={1} />} />
-        <Route exact path="/results/single" element={<Participants sa={1} />} />
-        <Route exact path="/results/average" element={<Participants sa={0} />} />
-      </Routes>
+      <Switch>
+        <Route exact path="/" component={() => <Participants sa={1} />} />
+        <Route exact path="/results/single" component={() => <Participants sa={1} />} />
+        <Route exact path="/results/average" component={() => <Participants sa={0} />} />
+      </Switch>
     </>
   );
 }
