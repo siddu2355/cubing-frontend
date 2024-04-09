@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
+
+import Pagination from './Pagination';
+import {paginate} from "../utils/paginate"
 import { getParticipants } from '../services/participantService';
 
 class Table extends Component {
     state = { 
-        participants: []
+        participants: [],
+        currentPage: 1,
+        pageSize: 10,
     } 
 
     async componentDidMount() {
         const response = await getParticipants(this.props.sa);
         this.setState({ participants: response.data });
     }
+
+    handlePageChange = (page) => {
+        this.setState({ currentPage: page });
+    };
 
     timeConversion = (time) =>{
         let minutes = Math.floor(time / 60);
@@ -18,12 +27,20 @@ class Table extends Component {
     }
     
 
-    render() { 
+    render() {
+        const members = paginate(
+            this.state.participants,
+            this.state.currentPage,
+            this.state.pageSize
+        );
+
         const {sa} = this.props;
         return (
             <>
-            {this.state.participants.length === 0 && <p className='table-value'>No participants present!</p>}
-            {this.state.participants.length !== 0 && <table style={{ borderCollapse: 'collapse', width: '80%', border: '1px solid #ddd', marginTop:"20px" }}>
+            {members.length === 0 && <p className='table-value'>Please wait...</p>}
+            {members.length !== 0 && 
+        <> 
+            <table style={{ borderCollapse: 'collapse', width: '80%', border: '1px solid #ddd', marginTop:"20px" }}>
                 <thead>
                     <tr style={{ backgroundColor: '#f2f2f2' }}>
                         <th className='table-value'>#</th>
@@ -34,9 +51,9 @@ class Table extends Component {
                     </tr>
                 </thead>
                 <tbody>
-                    {this.state.participants.map((participant, i) => 
+                    {members.map((participant) => 
                         <tr key={participant.student_id} style={{ borderBottom: '1px solid #ddd' }}>
-                            <td className='table-value'>{i+1}</td>
+                            <td className='table-value'>{this.state.participants.indexOf(participant) + 1}</td>
                             <td className='table-value'>{participant.name}</td>
                             {sa === 1 && <td className='table-value'>{this.timeConversion(participant.solve_best)}</td>}
                             {sa === 0 && <td className='table-value'>{this.timeConversion(participant.solve_avg)}</td>}
@@ -52,7 +69,15 @@ class Table extends Component {
                         </tr>
                     )}
                 </tbody>
-            </table>}
+            </table>
+            <div style={{height:"40px"}}></div>
+            <Pagination
+            onPageChange={this.handlePageChange}
+            currentPage={this.state.currentPage}
+            pageSize={this.state.pageSize}
+            itemsCount={this.state.participants.length}
+          />
+          </>}
             </>
         );
     }

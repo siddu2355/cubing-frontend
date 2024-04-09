@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Table from './Table';
+import NavBar from './Navbar';
 
 class Participants extends Component {
     state = {
@@ -25,6 +26,7 @@ class Participants extends Component {
     render() { 
         return (
             <div className='App'>
+                <NavBar/>
                 <div style={{marginTop:"20px", marginBottom:"20px"}}>
                   <span className={this.clname("single")}><a href='/results/single'>Single</a></span>
                   <span className={this.clname("average")}><a href='/results/average'>Average</a></span>
